@@ -1,0 +1,208 @@
+﻿﻿ /*地图所在DIV样式*/
+#ContentSection{
+  position: absolute;
+  top: 37px;
+  left: 225px;
+  width: 100%;
+  height: 100%;
+}
+
+#map{
+  width: 100%;
+  height: 595px;
+}
+
+#map:hover{
+  cursor: pointer;
+}
+
+/*地图类型切换条*/
+#switchMap{
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  z-index: 9;
+}
+
+#switchMap > ul > li{
+  height: 34px;
+  width: 60px;
+}
+
+#switchMap > ul > li > span{
+  display: inline-block;
+  height: 28px;
+  width: 100%;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#switchMap > ul > li > span.beSelected{
+  background-color: #FFC340;
+}
+
+#switchMap > ul > li > span:hover{
+  cursor: pointer;
+  background-color: #FFC340;
+}
+
+/*地图工具条*/
+#tools{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  /*width: 360px;*/
+  width: 280px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: red;
+}
+
+#tools > ul > li{
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 36px;
+}
+
+#tools > ul > li.beSelected{
+  background-color: #09ADF4;
+}
+
+#tools > ul > li:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#tools > ul > li > span{
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  background: url("../image/tools.png") no-repeat;
+}
+
+#tools > ul > li > span#pointTo{
+  background-position: -5px center;
+}
+
+#tools > ul > li > span#zoomIn{
+  background-position: -53px center;
+}
+
+#tools > ul > li > span#zoomOut{
+  background-position: -100px center;
+}
+
+#tools > ul > li > span#rulLen{
+  background-position: -148px center;
+}
+
+#tools > ul > li > span#rulAre{
+  background-position: -195px center;
+}
+
+#tools > ul > li > span#erase{
+  background-position: -335px center;
+}
+
+#tools > ul > li > span#fullScreen{
+  background-position: -383px center;
+}
+
+#tools > ul > li > span#picCut{
+  background-position: -242px center;
+}
+
+#tools > ul > li > span#picPri{
+  background-position: -290px center;
+}
+
+/*工具测量提示样式结束*/
+.tooltip{
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.tooltip-measure{
+  opacity: 1;
+  font-weight: bold;
+}
+
+.tooltip-static{
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+
+.tooltip-measure:before, .tooltip-static:before{
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+
+.tooltip-static:before{
+  border-top-color: #ffcc33;
+}
+
+/*工具测量提示样式结束*/
+/*Feature对象提示框信息*/
+.popup{
+  position: absolute;
+  background-color: white;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  padding-left: 10px;
+  left: -50px;
+}
+
+.popup:after, .popup:before{
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.popup:after{
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+
+.popup:before{
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+
+.dialMsg{
+  position: absolute;
+  display: inline-block;
+  top: 3px;
+  right: -1px;
+  width: 30px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>View Animation</title>
+  <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
+  <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+  <script src="https://openlayers.org/en/v4.6.4/build/ol.js"></script>
+</head>
+<body>
+<div id="map" class="map"></div>
+
+<script>
+  var map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        preload: 4,
+        source: new ol.source.OSM()
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([28.9744, 41.0128]),
+      zoom: 6
+    })
+  });
+</script>
+</body>
+</html>

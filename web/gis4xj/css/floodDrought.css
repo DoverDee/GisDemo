@@ -1,0 +1,401 @@
+/*分类样式开始*/
+#category{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 224px;
+  height: fit-content;
+  color: #6A6A6A;
+  /*border-right: 1px solid #7474f1;*/
+  border-bottom: 1px solid #cccccc;
+  background-color: #ffffff;
+
+}
+
+#category > dl:hover{
+  cursor: pointer;
+}
+
+#category > dl > dt{
+  float: left;
+  width: 224px;
+  height: 38px;
+  line-height: 38px;
+  background: url("../image/category-bg.png") repeat-x;
+}
+
+#category > dl > dt > span{
+  display: inline-block;
+  float: left;
+  width: 170px;
+  vertical-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#category > dl > dt > span:first-child{
+  width: 38px;
+  height: 38px;
+  background: url("../image/category-titles.png") no-repeat;
+}
+
+#category > dl > dt#category_2 > span:first-child{
+  background-position: 7px -33px;
+}
+
+#category > dl > dt#category_2:hover > span:first-child{
+  background-position: -27px -33px;
+}
+
+#category > dl > dt.beSelected{
+  color: #ffffff;
+  background: url("../image/category-bg-hover.png") repeat-x;
+}
+
+#category > dl > dt:hover{
+  color: #ffffff;
+  background: url("../image/category-bg-hover.png") repeat-x;
+}
+
+#category > dl > dd{
+  /*margin: 0 4px;*/
+}
+
+#category > dl > dd li{
+  float: left;
+  width: 70px;
+  height: 90px;
+  background-color: #FDFDFD;
+  margin: 1px;
+}
+
+#category > dl > dd li > span{
+  display: block;
+  width: 70px;
+  text-align: center;
+}
+
+#category > dl > dd#category_2_1 li > span:first-child{
+  height: 65px;
+  background: url("../image/stbprp.png") no-repeat;
+}
+
+#category > dl > dd li#proFacilities_item_1 > span:first-child{
+  background-position: -20px -10px;
+}
+
+#category > dl > dd li#proFacilities_item_1:hover > span:first-child{
+  background-position: -290px -10px !important;
+}
+
+#category > dl > dd li#proFacilities_item_2 > span:first-child{
+  background-position: -106px -10px;
+}
+
+#category > dl > dd li#proFacilities_item_2:hover > span:first-child{
+  background-position: -376px -10px !important;
+}
+
+#category > dl > dd li#proFacilities_item_3 > span:first-child{
+  background-position: -195px -10px;
+}
+
+#category > dl > dd li#proFacilities_item_3:hover > span:first-child{
+  background-position: -465px -10px !important;
+}
+
+#category > dl > dd li#proFacilities_item_4 > span:first-child{
+  background-position: -20px -97px;
+}
+
+#category > dl > dd li#proFacilities_item_4:hover > span:first-child{
+  background-position: -290px -97px !important;
+}
+
+#category > dl > dd li#proFacilities_item_5 > span:first-child{
+  background-position: -106px -97px;
+}
+
+#category > dl > dd li#proFacilities_item_5:hover > span:first-child{
+  background-position: -376px -97px !important;
+}
+
+#category > dl > dd li#proFacilities_item_6 > span:first-child{
+  background-position: -195px -97px;
+}
+
+#category > dl > dd li#proFacilities_item_6:hover > span:first-child{
+  background-position: -465px -97px !important;
+}
+
+#category > dl > dd li#proFacilities_item_7 > span:first-child{
+  background-position: -20px -182px;
+}
+
+#category > dl > dd li#proFacilities_item_7:hover > span:first-child{
+  background-position: -290px -182px !important;
+}
+
+#category > dl > dd li#proFacilities_item_8 > span:first-child{
+  background-position: -106px -182px;
+}
+
+#category > dl > dd li#proFacilities_item_8:hover > span:first-child{
+  background-position: -376px -182px !important;
+}
+
+#category > dl > dd li#proFacilities_item_9 > span:first-child{
+  background-position: -195px -182px;
+}
+
+#category > dl > dd li#proFacilities_item_9:hover > span:first-child{
+  background-position: -465px -182px !important;
+}
+
+#category > dl > dd li#proFacilities_item_10 > span:first-child{
+  background-position: -20px -267px;
+}
+
+#category > dl > dd li#proFacilities_item_10:hover > span:first-child{
+  background-position: -290px -267px !important;
+}
+
+#category > dl > dd li#proFacilities_item_11 > span:first-child{
+  background-position: -106px -267px;
+}
+
+#category > dl > dd li#proFacilities_item_11:hover > span:first-child{
+  background-position: -376px -267px !important;
+}
+
+#category > dl > dd li#proFacilities_item_12 > span:first-child{
+  background-position: -195px -267px;
+}
+
+#category > dl > dd li#proFacilities_item_12:hover > span:first-child{
+  background-position: -465px -267px !important;
+}
+
+#category > dl > dd li > span:last-child{
+  display: block;
+  height: 25px;
+}
+
+/*分类样式结束*/
+
+/*标签菜单条样式开始*/
+#tabMenu{
+  position: absolute;
+  top: 0;
+  left: 224px;
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #09ADF4;
+  margin-left: 3px;
+  padding-left: 3px;
+  padding-top: 5px;
+  background-color: #ffffff;
+}
+
+#tabMenu > ul > li{
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 5px;
+  margin-left: 3px;
+  background-color: #F7F7F9;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+}
+
+#tabMenu > ul > li.beSelected{
+  color: #ffffff;
+  background-color: #09ADF4;
+}
+
+#tabMenuSearch{
+  background: url("../image/downArrow.png") no-repeat 50px center;
+}
+
+#querySubSearch{
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  color: #000000;
+}
+
+#querySubSearch > li.beSelected{
+  color: #019BDB;
+}
+
+#querySubSearch li{
+  display: block;
+  width: 68px;
+  height: 25px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+/**/
+#tabMenuStatistics{
+  background: url("../image/downArrow.png") no-repeat 50px center;
+}
+
+#statisticsSubSearch{
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #f3f3f3;
+  color: #000000;
+}
+
+#statisticsSubSearch > li.beSelected{
+  color: #019BDB;
+}
+
+#statisticsSubSearch li{
+  display: block;
+  width: 68px;
+  height: 25px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+/*标签菜单条样式结束*/
+
+/*标签菜单模块样式开始*/
+#ContentSection{
+  position: absolute;
+  top: 37px;
+  left: 227px;
+  /*width: 100%;*/
+  width: 1072px;
+  /*height: 100%;*/
+  /*border: 2px solid red;*/
+}
+
+#ContentSection > div > iframe{
+  /*width: 100%;*/
+  width: 1072px;
+  height: 590px;
+}
+
+/*标签菜单模块样式结束*/
+
+/*Feature对象对话框详细信息样式开始*/
+#dialogWrapper{
+  position: absolute;
+  width: 100%;
+  height: 640px;
+  background: transparent;
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+
+#dialog{
+  width: 350px;
+  margin: 25px auto;
+  /*border: 1px solid red;*/
+}
+
+#dialogTitle{
+  width: 347px;
+  height: 25px;
+  background-color: #0AACF5;
+  border: 1px solid #0AACF5;
+}
+
+#dialogTitle > ul{
+  float: left;
+  height: 25px;
+  color: #ffffff;
+}
+
+#dialogTitle > ul:first-child{
+  float: left;
+}
+
+#dialogTitle > ul:last-child{
+  float: right;
+}
+
+#dialogTitle > ul:first-child > li{
+  display: inline-block;
+  float: left;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-right: 1px solid #0AACF5;
+}
+
+#dialogTitle > ul:first-child > li.beSelected{
+  background: url("../image/category-bg.png") repeat-x;
+  color: #0AACF5;
+  font-weight: bold;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+#dialogTitle > ul:first-child > li:hover{
+  background: url("../image/category-bg.png") repeat-x;
+  color: #0AACF5;
+  font-weight: bold;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+#dialogTitle > ul:last-child > li{
+  display: inline-block;
+  float: right;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+  background: url("../image/dialog_close.png") no-repeat 2px 2px;
+}
+
+#dialogContent{
+  width: 346px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  border: 2px solid #eeeaea;
+}
+
+#dialogContent > div#baseInfo > table{
+  width: 100%;
+}
+
+#dialogContent > div#baseInfo > table tr{
+  background-color: #FFFFFF;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+}
+
+#dialogContent > div#baseInfo > table tr:hover{
+  background-color: #EEEEEE;
+}
+
+#dialogContent > div#baseInfo > table td{
+  width: 50%;
+  border-bottom: 1px solid #EEEEEE;
+  height: 25px;
+  line-height: 25px;
+}
+
+#dialogContent > div#baseInfo > table td:first-child{
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#dialogContent > div#baseInfo > table td:last-child{
+  text-align: left;
+}
+
+/*Feature对象对话框详细信息样式开始*/

@@ -1,0 +1,13 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+}
+
+#map, #command {
+  margin: 10px;
+}
+
+.tooltip-inner {
+  white-space: nowrap;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>主页</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+  <style>
+    /**/
+    #header{
+      background: url("../image/head-bg_01.png");
+    }
+
+    #headNav > li{
+      width: 100px;
+      height: 50px;
+      color: #ffffff;
+    }
+
+    #headNav > li > a{
+      color: #ffffff;
+    }
+
+    #headNav > li.hl{
+      width: 2px;
+      height: 50px;
+      background: linear-gradient(transparent, #8BC9E1);
+    }
+  </style>
+</head>
+<body>
+<nav id="header" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <img alt="Brand" src="../image/head-logo.png">
+    </div>
+    <div>
+      <ul id="headNav" class="nav navbar-nav navbar-right">
+        <li class="hl">&nbsp;</li>
+        <li id="nav_1" class="forSelect hlgColor">
+          <div class="col-md-12">
+            <img alt="Brand" src="../image/head-nav-titles.png">
+          </div>
+          <div class="col-md-12">
+            水资源管理
+          </div>
+        </li>
+        <li class="hl">&nbsp;</li>
+        <li id="nav_2" class="forSelect"><a href="javascript:" rel="floodDrought.do"><span>防汛抗旱</span></a></li>
+        <li class="hl">&nbsp;</li>
+        <li id="nav_3" class="">
+          <div class="col-md-12">
+            ok
+          </div>
+          <div class="col-md-12">
+            yes
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script>
+  $(function(){
+    $("#headNav li a").click(function(){
+      $(this).parent().addClass("hlgColor").siblings(".forSelect").removeClass("hlgColor");
+      $("#main").attr("src", "menu/" + $(this).attr("rel"));
+    });
+  });
+</script>
+</body>
+</html>

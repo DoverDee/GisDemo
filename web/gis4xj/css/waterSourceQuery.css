@@ -1,0 +1,255 @@
+/*查询模块开始*/
+/*#queryNav{
+  width: 100%;
+  height: 25px;
+}
+
+#queryNav > ul{
+  float: right;
+}
+
+#queryNav > ul > li{
+  float: left;
+  width: 35px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #F4F4F4;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#queryNav > ul > li.beSelected{
+  cursor: pointer;
+  background-color: #09ADF4;
+}*/
+
+#queryCdt{
+  /*text-align: center;*/
+  margin-left: 5px;
+  padding: 5px 0;
+  background-color: #F9F9F9;
+}
+
+#navCtt{
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+#queryCdt h5{
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+
+#queryCdt > input, #queryCdt > select{
+  border-radius: 5px;
+}
+
+#queryCdt > label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#queryCdt > input[type="text"]{
+  width: 120px;
+  height: 20px;
+  border: 1px solid #09ADF4;
+}
+
+#queryCdt > input[type="number"]{
+  width: 90px;
+  height: 21px;
+  border: 1px solid #09ADF4;
+}
+
+#queryCdt > input[type="number"]{
+  border-left: none;
+}
+
+#queryCdt > select{
+  height: 25px;
+  border: 1px solid #09ADF4;
+  cursor: pointer;
+}
+
+#queryCdt > input[type="button"]{
+  width: 40px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #CFDDEA;
+  border-radius: 5px;
+}
+
+#queryCdt > input[type="button"]:hover{
+  background-color: #09ADF4;
+}
+
+#qlRst{
+  width: 1068px;
+}
+
+#qlRst > table{
+  width: 100%;
+  border-top: 2px solid #CFDDEA;
+  text-align: center;
+}
+
+#qlRst > table h6{
+  color: red;
+}
+
+#qlRst > table th{
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #CFDDEA;
+  background-color: #EBF1F3;
+  line-height: 30px;
+}
+
+#qlRst > table tbody tr:nth-child(odd){
+  background-color: #FAFAFA;
+}
+
+#qlRst > table td{
+  border: 1px solid #CFDDEA;
+  line-height: 25px;
+}
+
+#qlRst > table td span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#qlPagination{
+  width: 100%;
+  height: 25px;
+  float: right;
+  margin-top: 5px;
+  margin-right: -2px;
+}
+
+#qlPagination > ul > li{
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-right: 2px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#qlPagination > ul > li > span{
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 3px;
+  background-color: #CFDDEA;
+}
+
+#qlPagination > ul > li.speH > span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#qlPagination > ul > li.speI > span > input{
+  height: 21px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+}
+
+#queryMap{
+  position: relative;
+  width: 100%;
+  height: 680px;
+}
+
+#qmRst{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 280px;
+  max-height: 450px;
+  background-color: #ffffff;
+  z-index: 9;
+}
+
+#qmRst > table{
+  width: 100%;
+  text-align: center;
+}
+
+#qmRst > table h6{
+  color: red;
+}
+
+#qmRst > table tr{
+  border: 1px solid #CFDDEA;
+}
+
+#qmRst > table th{
+  font-weight: bold;
+  font-size: 14px;
+  /*border: 1px solid #CFDDEA;*/
+  background-color: #EBF1F3;
+  line-height: 30px;
+}
+
+#qmRst > table td{
+  /*border: 1px solid #CFDDEA;*/
+  cursor: pointer;
+  line-height: 25px;
+}
+
+#qmRst > table tbody tr:nth-child(odd){
+  background-color: #FAFAFA;
+}
+
+#qmRst > table td span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#qmPagination{
+  width: 100%;
+  float: right;
+  margin-right: -2px;
+}
+
+#qmPagination > ul > li{
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-top: 5px;
+  margin-right: 2px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#qmPagination > ul > li > span{
+  display: inline-block;
+  /*width: 35px;*/
+  height: 25px;
+  line-height: 25px;
+  padding: 0 3px;
+  background-color: #CFDDEA;
+}
+
+#qmPagination > ul > li.speH > span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#qmPagination > ul > li.speI > span > input{
+  height: 21px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/*查询模块结束*/

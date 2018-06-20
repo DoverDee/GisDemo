@@ -1,0 +1,283 @@
+/*给定地图窗口宽高值*/
+#mapMap{
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+}
+
+/*搜索框样式开始*/
+#search{
+  position: fixed;
+  top: 0;
+  right: 5px;
+  width: 304px;
+}
+
+#searchText{
+  width: 100%;
+  height: 36px;
+  background-color: #09ADF4;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+#searchText > input{
+  height: 25px;
+  width: 175px;
+  margin: 4px 10px;
+  border-radius: 15px;
+  border: 0;
+  vertical-align: middle;
+  background: #D3F0FE;
+  padding: 0 10px;
+}
+
+#searchText > span{
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#searchText > span#search_img{
+  display: inline-block;
+  height: 25px;
+  width: 45px;
+  vertical-align: middle;
+  background: #D3F0FE url(../image/search.png) no-repeat center center;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#searchText > span#search_img:hover{
+  background-color: #029BDB;
+}
+
+#searchText > span.up{
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  background: url("../image/up.png") no-repeat center center;
+}
+
+#searchText > span.down{
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  background: url("../image/down.png") no-repeat center center;
+}
+
+#selectAndResult{
+  position: absolute;
+  width: 302px;
+  /*height: 510px;*/
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+#searchSelect{
+  width: 100%;
+  height: 131px;
+}
+
+#searchSelect > div#selectItem > ul > li{
+  display: block;
+  float: left;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  margin: 0 5px;
+}
+
+#searchSelect > div#selectItem > ul > li > label{
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#searchSelect > div#selectItem > ul > li .btn-group.bootstrap-select{
+  width: 215px;
+}
+
+#searchSelect > div#selectItem > ul > li > select{
+  height: 25px;
+  border: 1px solid #09ADF4;
+  border-radius: 5px;
+}
+
+/*#searchSelect > div#selectItem > ul{*/
+/*height: 35px;*/
+/*border-bottom: 1px solid #cccccc;*/
+/*}*/
+
+/*#searchSelect > div#selectItem > ul > li{*/
+/*display: inline-block;*/
+/*float: left;*/
+/*width: 100px;*/
+/*height: 35px;*/
+/*line-height: 35px;*/
+/*text-align: center;*/
+/*background: url("../image/category-bg.png") repeat-x;*/
+/*border-right: 1px solid #cccccc;*/
+/*}*/
+
+/*#searchSelect > div#selectItem > ul > li:last-child{*/
+/*border-right: 0;*/
+/*}*/
+
+/*#searchSelect > div#selectItem > ul > li:hover{*/
+/*cursor: pointer;*/
+/*border-bottom: 2px solid #0AACF5;*/
+/*}*/
+
+/*#searchSelect > div#selectItem > ul > li.beSelected{*/
+/*color: #0AACF5;*/
+/*border-bottom: 2px solid #0AACF5;*/
+/*}*/
+
+/*#searchSelect > div.item{*/
+/*padding: 3px 0 3px 10px;*/
+/*}*/
+
+/*#searchSelect > div.item > ul > li{*/
+/*float: left;*/
+/*margin: 2px 10px 0 0;*/
+/*padding: 3px;*/
+/*}*/
+
+/*#searchSelect > div.item > ul > li.beSelected{*/
+/*cursor: pointer;*/
+/*background-color: #E2EFF7;*/
+/*}*/
+
+/*#searchSelect > div.item > ul > li:hover{*/
+/*cursor: pointer;*/
+/*background-color: #E2EFF7;*/
+/*}*/
+
+#selectAndResult > div#searchResult{
+  width: 100%;
+  height: 272px;
+  border-top: 1px solid #cccccc;
+  padding-top: 2px;
+  overflow-y: scroll;
+}
+
+#selectAndResult > div#searchResult > ul > h6{
+  text-align: center;
+  color: red;
+}
+
+#selectAndResult > div#searchResult > ul > li{
+  float: left;
+  width: 283px;
+  height: 78px;
+  background-color: #F9F9F9;
+  margin: 2px 10px;
+}
+
+#selectAndResult > div#searchResult > ul > li > div{
+  position: relative;
+  float: left;
+}
+
+#selectAndResult > div#searchResult > ul > li > div > span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#selectAndResult > div#searchResult > ul > li > div > p{
+  position: relative;
+  line-height: 20px;
+  max-height: 40px;
+  overflow: hidden;
+
+}
+
+#selectAndResult > div#searchResult > ul > li > div > p::after{
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 40px;
+  background: -webkit-linear-gradient(left, transparent, #fff 55%);
+  background: -o-linear-gradient(right, transparent, #fff 55%);
+  background: -moz-linear-gradient(right, transparent, #fff 55%);
+  background: linear-gradient(to right, transparent, #fff 55%);
+}
+
+#selectAndResult > div#searchResult > ul > li > div:first-child{
+  float: left;
+  width: 180px;
+  height: 78px;
+}
+
+#selectAndResult > div#searchResult > ul > li > div:first-child > span{
+  display: block;
+  height: 20px;
+  padding-left: 0;
+  margin-left: 10px;
+}
+
+#selectAndResult > div#searchResult > ul > li > div:first-child > span.toPoint{
+  font-size: 14px;
+  height: 30px;
+  line-height: 25px;
+  background: url("../image/point50.png") no-repeat -1px 0;
+  cursor: pointer;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#selectAndResult > div#searchResult > ul > li > div:first-child > span.toPoint em{
+  display: inline-block;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#selectAndResult > div#searchResult > ul > li > div:last-child{
+  float: right;
+  width: 100px;
+  height: 78px;
+  margin: 12px 1px;
+}
+
+#pagination{
+  width: 100%;
+  height: 25px;
+}
+
+#pagination > ul > li{
+  display: inline-block;
+  float: left;
+  height: 25px;
+  margin-right: 2px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#pagination > ul > li > span{
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 3px;
+  background-color: #CFDDEA;
+  /*background: url("../image/category-bg.png") repeat-x;*/
+}
+
+#pagination > ul > li.speH > span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#pagination > ul > li.speI > span > input{
+  height: 21px;
+  width: 45px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/*搜索框样式结束*/

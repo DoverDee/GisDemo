@@ -1,0 +1,246 @@
+/*查询模块开始*/
+/*#queryNav{
+  width: 100%;
+  height: 25px;
+}
+
+#queryNav > ul{
+  float: right;
+}
+
+#queryNav > ul > li{
+  float: left;
+  width: 35px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #F4F4F4;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#queryNav > ul > li.beSelected{
+  cursor: pointer;
+  background-color: #09ADF4;
+}*/
+
+#staCdt{
+  /*text-align: center;*/
+  margin-left: 5px;
+  padding: 5px 0;
+  background-color: #F9F9F9;
+}
+
+#navCtt{
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+#staCdt h5{
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+
+#staCdt > input, #staCdt > select{
+  border-radius: 5px;
+}
+
+#staCdt > label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#staCdt > input[type="text"]{
+  width: 120px;
+  height: 20px;
+  border: 1px solid #09ADF4;
+}
+
+#staCdt > input[type="number"]{
+  width: 90px;
+  height: 21px;
+  border: 1px solid #09ADF4;
+}
+
+#staCdt > input[type="number"]{
+  border-left: none;
+}
+
+#staCdt > select{
+  height: 25px;
+  border: 1px solid #09ADF4;
+  cursor: pointer;
+}
+
+#staCdt > input[type="button"]{
+  width: 40px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: #CFDDEA;
+  border-radius: 5px;
+}
+
+#staCdt > input[type="button"]:hover{
+  background-color: #09ADF4;
+}
+
+#slRst{
+  width: 1068px;
+}
+
+#slRst > table{
+  width: 100%;
+  border-top: 2px solid #CFDDEA;
+  text-align: center;
+}
+
+#slRst > table th{
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #CFDDEA;
+  background-color: #EBF1F3;
+  line-height: 30px;
+}
+
+#slRst > table tbody tr:nth-child(odd){
+  background-color: #FAFAFA;
+}
+
+#slRst > table td{
+  border: 1px solid #CFDDEA;
+  line-height: 25px;
+}
+
+#slRst > table td span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#slPagination{
+  width: 100%;
+  height: 25px;
+  float: right;
+  margin-top: 5px;
+  margin-right: -2px;
+}
+
+#slPagination > ul > li{
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-right: 2px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#slPagination > ul > li > span{
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 3px;
+  background-color: #CFDDEA;
+}
+
+#slPagination > ul > li.speH > span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#slPagination > ul > li.speI > span > input{
+  height: 21px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+}
+
+#staMap{
+  position: relative;
+  width: 100%;
+  height: 680px;
+}
+
+#smRst{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 280px;
+  max-height: 450px;
+  background-color: #ffffff;
+}
+
+#smRst > table{
+  width: 100%;
+  text-align: center;
+}
+
+#smRst > table tr{
+  border: 1px solid #CFDDEA;
+}
+
+#smRst > table th{
+  font-weight: bold;
+  font-size: 14px;
+  /*border: 1px solid #CFDDEA;*/
+  background-color: #EBF1F3;
+  line-height: 30px;
+}
+
+#smRst > table td{
+  /*border: 1px solid #CFDDEA;*/
+  cursor: pointer;
+  line-height: 25px;
+}
+
+#smRst > table tbody tr:nth-child(odd){
+  background-color: #FAFAFA;
+}
+
+#smRst > table td span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#smPagination{
+  width: 100%;
+  float: right;
+  margin-right: -2px;
+}
+
+#smPagination > ul > li{
+  display: inline-block;
+  float: right;
+  height: 25px;
+  margin-top: 5px;
+  margin-right: 2px;
+  line-height: 25px;
+  text-align: center;
+}
+
+#smPagination > ul > li > span{
+  display: inline-block;
+  /*width: 35px;*/
+  height: 25px;
+  line-height: 25px;
+  padding: 0 3px;
+  background-color: #CFDDEA;
+}
+
+#smPagination > ul > li.speH > span:hover{
+  cursor: pointer;
+  background-color: #09ADF4;
+}
+
+#smPagination > ul > li.speI > span > input{
+  height: 21px;
+  width: 50px;
+  border: none;
+  background-color: #ffffff;
+}
+
+/*查询模块结束*/
